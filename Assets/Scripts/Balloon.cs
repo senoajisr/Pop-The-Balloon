@@ -5,6 +5,7 @@ using UnityEngine;
 public class Balloon : MonoBehaviour
 {
     public float speed = -0.01f;
+    public Material[] materials;
 
     private GameManager gameManager;
 
@@ -12,6 +13,8 @@ public class Balloon : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        randomMaterial();
+        
     }
 
     // Update is called once per frame
@@ -27,5 +30,10 @@ public class Balloon : MonoBehaviour
     public void OnClick()
     {
         Destroy(gameObject);
+    }
+
+    void randomMaterial() {
+        int theChosenOne = Random.Range(0, materials.Length-1);
+        gameObject.GetComponent<MeshRenderer>().material = materials[theChosenOne];
     }
 }

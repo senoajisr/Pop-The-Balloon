@@ -95,6 +95,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -0.01
+  materials:
+  - {fileID: 2100000, guid: 4f1fb30c5cbadfd20bd8d1541c8f369b, type: 2}
+  - {fileID: 2100000, guid: 575b0d03c42a971eb8fcf83b1db29535, type: 2}
+  - {fileID: 2100000, guid: 8e7b338b2dc8e6dbdb0c86b9bf03538e, type: 2}
+  - {fileID: 2100000, guid: 9f13f545a507bb18dbaeaebe0829d435, type: 2}
+  - {fileID: 2100000, guid: 23e359d8c3b56b3cd81b1fa727cad2c7, type: 2}
+  - {fileID: 2100000, guid: d8fe0cb04128404ff9060ec7d76677ab, type: 2}
+  - {fileID: 2100000, guid: 79e0c6677e26140ebb656ec8e11cccf2, type: 2}
 --- !u!136 &919132147657833974
 CapsuleCollider:
   m_ObjectHideFlags: 0
