@@ -1,44 +1,9 @@
 fileFormatVersion: 2
-guid: 651560a5ab4ba7a4abaacf042a7ed119
+guid: 6a7549d8971122a67babc15cfdf5b3c5
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: batik
-    second: {fileID: 2800000, guid: 5215ba770bd421e4c8d2e069daaad0ba, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: batik.7jpg
-    second: {fileID: 2800000, guid: 41d0abe8766ebae49b78ee908680a78c, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: batik2
-    second: {fileID: 2800000, guid: bb7724a2e3fe85a46925c08640e53a03, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: batik3
-    second: {fileID: 2800000, guid: bca2032d02dde234d97eb224204cadff, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: batik4
-    second: {fileID: 2800000, guid: 733b4d4576902c243bc9c7ac8aec69b5, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: batik5
-    second: {fileID: 2800000, guid: da233cfb7609d3b4285e611cefc3daa6, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: batik6
-    second: {fileID: 2800000, guid: 7b1fc81aebf0bf24b8b8c94225812dbc, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
