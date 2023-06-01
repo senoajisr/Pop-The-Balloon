@@ -43,7 +43,7 @@ public class SpawnManager : MonoBehaviour
     }
 
     private void SpawnBaloon() {
-        int chosen_one = Random.Range(0, balloons.Count);
+        int chosen_one = Random.Range(0, balloons.Count-1);
         GameObject balloon = Instantiate(balloons[chosen_one], generateSpawnPosition(), balloons[chosen_one].transform.rotation);
         Balloon balloonScript = balloon.gameObject.GetComponent<Balloon>();
     }
