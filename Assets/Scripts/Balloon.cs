@@ -22,7 +22,7 @@ public class Balloon : MonoBehaviour
     {
         transform.position += new Vector3(0, 0, speed);
 
-        if (transform.position.z <= -21) {
+        if (transform.position.x <= -21) {
             Destroy(gameObject);
         }
     }
