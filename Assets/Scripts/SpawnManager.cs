@@ -2,27 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnManager : MonoBehaviour
-{
+public class SpawnManager : MonoBehaviour {
     public List<GameObject> balloons;
-
     private bool spawning = true;
     private float spawnDelay = 10;
     private float spawnDelayReduction = 0.1f;
     private float currentSpawnDelay;
-    private List<Vector3> spawnRange = new List<Vector3> {new Vector3(-10, 5, 13), new Vector3(10, 1.5f, 13)};
+    private List<Vector3> spawnRange = new List<Vector3> {new Vector3(-10, 25, 13), new Vector3(10, 1.5f, 13)};
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         currentSpawnDelay = spawnDelay;
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         if (!spawning) return;
-
         currentSpawnDelay -= Time.deltaTime;
 
         if (currentSpawnDelay < 0) {
@@ -32,13 +27,11 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
-    public void StartSpawning()
-    {
+    public void StartSpawning() {
         spawning = true;
     }
 
-    public void StopSpawning()
-    {
+    public void StopSpawning() {
         spawning = false;
     }
 
