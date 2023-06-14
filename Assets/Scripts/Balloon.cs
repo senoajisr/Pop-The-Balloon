@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Balloon : MonoBehaviour {
-    public float speed = -0.01f;
+    public float speed = -1f;
     public Material[] materials;
 
     private GameManager gameManager;
@@ -16,7 +16,7 @@ public class Balloon : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        transform.position += new Vector3(0, 0, speed);
+        transform.position += new Vector3(speed, 0, 0);
 
         if (transform.position.y <= -21) {
             Destroy(gameObject);

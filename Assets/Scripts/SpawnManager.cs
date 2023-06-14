@@ -8,7 +8,7 @@ public class SpawnManager : MonoBehaviour {
     private float spawnDelay = 10;
     private float spawnDelayReduction = 0.1f;
     private float currentSpawnDelay;
-    private List<Vector3> spawnRange = new List<Vector3> {new Vector3(-10, 30, 13), new Vector3(10, 1.5f, 13)};
+    private List<Vector3> spawnRange = new List<Vector3> {new Vector3(-23.54f, 22.5f, 55.7f), new Vector3(-23.54f, 10.7f, -60.5f)};
 
     // Start is called before the first frame update
     void Start() {
@@ -45,7 +45,7 @@ public class SpawnManager : MonoBehaviour {
         return new Vector3(
             Random.Range(spawnRange[0].x, spawnRange[1].x),
             Random.Range(spawnRange[0].y, spawnRange[1].y),
-            13
+            Random.Range(spawnRange[0].z, spawnRange[1].z)
         );
     }
 }
