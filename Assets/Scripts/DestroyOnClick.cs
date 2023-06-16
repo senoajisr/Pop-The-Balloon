@@ -7,6 +7,7 @@ public class DestroyOnClick : MonoBehaviour
     public bool playClickAudio = true;
     public RandomAudio randomAudio;
     public AudioSource audioSource;
+    public GameObject[] explosionParticles;
 
     private bool hasBeenClicked = false;
 
@@ -20,6 +21,8 @@ public class DestroyOnClick : MonoBehaviour
         if (hasBeenClicked) return;
         hasBeenClicked = true;
 
+        Explode();
+
         if (randomAudio != null) {
             randomAudio.PlayRandomAudio();
             StartCoroutine(WaitForAudio());
@@ -32,5 +35,11 @@ public class DestroyOnClick : MonoBehaviour
     {
         yield return new WaitUntil(() => audioSource.isPlaying == false);
         Destroy(gameObject);
+    }
+
+    void Explode ()
+    {
+        int theChosenOne = Random.Range(0, explosionParticles.Length-1);
+        Instantiate(explosionParticles[theChosenOne], transform.position, explosionParticles[theChosenOne].transform.rotation);
     }
 }
