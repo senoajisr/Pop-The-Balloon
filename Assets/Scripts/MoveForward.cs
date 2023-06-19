@@ -12,7 +12,8 @@ public class MoveForward : MonoBehaviour
     {
         transform.position += new Vector3(speed, 0, 0);
 
-        if (transform.position.y <= -21) {
+        if (transform.position.x <= -120) {
+            Global.Hearts -= 1;
             Destroy(gameObject);
         }
     }

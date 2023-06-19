@@ -22,6 +22,7 @@ public class DestroyOnClick : MonoBehaviour
         hasBeenClicked = true;
 
         Explode();
+        addScore();
 
         if (randomAudio != null) {
             randomAudio.PlayRandomAudio();
@@ -41,5 +42,9 @@ public class DestroyOnClick : MonoBehaviour
     {
         int theChosenOne = Random.Range(0, explosionParticles.Length-1);
         Instantiate(explosionParticles[theChosenOne], transform.position, explosionParticles[theChosenOne].transform.rotation);
+    }
+
+    void addScore() {
+        Global.balloonsPopped += 1;
     }
 }
