@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 641297989}
   - component: {fileID: 5924606892570373791}
   - component: {fileID: 8695297392828394403}
+  - component: {fileID: 3086250913392326867}
   m_Layer: 0
   m_Name: Original
   m_TagString: Untagged
@@ -317,3 +318,21 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a2726cf71b54ad6ac8b09c76c4813477, type: 3}
   - {fileID: 8300000, guid: 9fe92f93bb3a17d42b05fc26f15a12d0, type: 3}
   audioSource: {fileID: 5924606892570373791}
+--- !u!114 &3086250913392326867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141784906054251253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0, b: 0, a: 1}
+  outlineWidth: 5
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
