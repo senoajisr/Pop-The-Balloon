@@ -18,4 +18,4 @@ Enjoy playing Pop the Balloon and we hope you have a great experience!
 
 Can be downloaded at [itch.io](https://digitaldreamers.itch.io/pop-the-balloon)
 
-Trailer at [Youtube](https://github.com/senoajisr/Pop-The-Balloon)
+Trailer at [Youtube](https://youtu.be/e4ZD8di7Dc8)
